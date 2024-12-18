@@ -21,13 +21,13 @@ nav ul {
 
 /*MAIN Contenido principal. Gnerador de memes y paneles de edicion. */
 
-.contenido-principal {
+/* .contenido-principal {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:center;
     height: 800px;
     width: 90vw;
-}
+} */
 
 /* Elementos de contenedor generador de meme */
 
@@ -38,13 +38,12 @@ nav ul {
     align-items: center;
     padding: 5%;
     height: 600px;
-    background-color: rgba(19, 19, 19, 0.569);
+    background-color: rgba(35, 34, 34, 0.84);
+
 }
  .img-insertada {
     height: 300px;
-    width: auto;
-    border-style: dotted;
-    
+    width: auto;   
 }
 
 /* SECTION, CONTROLADORES DE IMAGEN */
@@ -57,6 +56,7 @@ section .panel-control {
 section .filtros-contenedor {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
 section .filtros-contenedor buttom {
