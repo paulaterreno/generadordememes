@@ -38,6 +38,7 @@ nav ul {
     align-items: center;
     padding: 5%;
     height: 600px;
+    width: 80vw;
     background-color: rgba(35, 34, 34, 0.84);
 
 }
