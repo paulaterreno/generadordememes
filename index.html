@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styless/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<title>Generador de Memes</title>
+<!-- JS PARA BOTON DE DESCARGA -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" 
+    integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+    integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+    crossorigin="anonymous"></script>    
+</head>
+<body>
+    <header>
+        <h1>Generador de memes</h1>
+        <!-- MENU DE NAVEGACION PRINCIPAL -->
+    <nav>
+        <ul>
+            <li>Imagen</li>
+            <li>Texto</li>
+            <li>Modo oscuro</li>
+        </ul>
+    </nav>
+    </header>
+    <!-- CONTENEDOR DE IMAGEN -->
+    <main class="contenido-principal">
+    <section class="meme-contenedor">
+        <div class="texto-superior"><h2>Texto superior</h2></div>
+        <div class="img-insertada"><img id="imgMeme" alt=""></div>
+        <div class="texto-inferior"><h2>Texto inferior</h2></div>
+        <button class="btn-descarga">Descargar Meme</button>
+    </section>
+    <!-- CONTROLADORES DE IMAGEN -->
+    <section class="panel-controles">
+    <form>
+        <h3>URL</h3>
+        <label>URL</label>
+        <input type="text" id="img-url">
+    
+        <h3>FILTROS</h3>
+        <div class="filtros-contenedor">
+        <label for="control-brillo">BRILLO</label>
+        <input type="range" id="control-brillo" min="0" max="100" step="0.1" value="1">
+
+        <label for="control-opacidad">OPACIDAD</label>
+        <input type="range" id="control-opacidad" min="0" max="1" step="0.1" value="1">
+
+        <label for="control-desenfoque">DESENFOQUE</label>
+        <input type="range" id="control-desenfoque" min="0px" max="10px" step="0.1px" value="0px">
+
+        <label for="control-contraste">CONTRASTE</label>
+        <input type="range" id="control-contraste" min="100%" max="1000%" step="1%" value="100%">
+
+        <label for="control-grises">ESCALA DE GRISES</label>
+        <input type="range" id="control-grises" min="0%" max="100%" step="1%" value="0%">
+
+        <label for="control-sepia">SEPIA</label>
+        <input type="range" id="control-sepia" min="0%" max="100%" step="1%" value="0%">
+
+        <label for="control-hue">HUE</label>
+        <input type="range" id="control-hue" min="0deg" max="359deg" step="1deg" value="0deg%">
+
+        <label for="control-saturacion">SATURACION</label>
+        <input type="range" id="control-saturacion" min="100%" max="1000%" step="10%" value="100%">
+
+        <label for="control-negativo">NEGATIVO</label>
+        <input type="range" id="control-negativo" min="100%" max="1000%" step="1%" value="100%">
+    
+        <button class="btn-restablecer">Restablecer</button>
+        </div>
+    </form>
+    </section>
+</main>
+<script src="/index.js"></script>
+</body>
+</html>

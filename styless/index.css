@@ -1,0 +1,65 @@
+body {
+    font-family: 'poppins';
+    background-color: #1f2b2b;
+    color: #D5DBDB;
+}
+
+/* HEADER, NAV. Titulo y menu de navegacion principal*/
+
+header h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+/*MAIN Contenido principal. Gnerador de memes y paneles de edicion. */
+
+.contenido-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 800px;
+    width: 90vw;
+}
+
+/* Elementos de contenedor generador de meme */
+
+ .meme-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    height: 600px;
+    background-color: rgba(19, 19, 19, 0.569);
+}
+ .img-insertada {
+    height: 300px;
+    width: auto;
+    border-style: dotted;
+    
+}
+
+/* SECTION, CONTROLADORES DE IMAGEN */
+
+section .panel-control {
+    display: flex;
+    flex-direction: column;
+}
+
+section .filtros-contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+section .filtros-contenedor buttom {
+    width: 40px;
+
+}
